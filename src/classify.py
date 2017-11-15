@@ -7,9 +7,20 @@ from sklearn import preprocessing
 # import matplotlib.pyplot as plt
 
 
+##
+# Import and investigate the data
+##
 test_data = np.genfromtxt('data/test_data.csv', delimiter=',')
 train_data = np.genfromtxt('data/train_data.csv', delimiter=',')
 train_labels = np.genfromtxt('data/train_labels.csv', delimiter=',')
+
+
+
+
+
+##
+# Prediction
+##
 
 scaler = preprocessing.StandardScaler().fit(train_data)
 
